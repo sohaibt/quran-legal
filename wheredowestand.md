@@ -12,7 +12,7 @@ Public GitHub Pages repo for https://qurantutors.app (custom domain via `CNAME`)
 
 Next-session startup prompt:
 ```
-quran-legal repo (sibling of the quran repo). git fetch and compare to origin/main and origin/landing-page; pull --ff-only if behind. Read wheredowestand.md RESUME HERE.
+quran-legal repo (sibling of the quran repo). git fetch and compare to origin/main; pull --ff-only if behind. Read wheredowestand.md RESUME HERE.
 Check App Review status for Quran Tutors (see the quran repo's RESUME HERE). After Apple approves AND the app is released: paste the App Store URL into the APP_STORE_URL line in index.html and en/index.html (on main), check both pages, then ask me before pushing to main.
 Ask me before anything outward-facing (merge, push to main, DNS).
 ```
