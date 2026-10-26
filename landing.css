@@ -210,3 +210,6 @@ html[lang="en"] .disp { font-weight: 600; letter-spacing: -.015em; }
 /* Mixed-language snippets (e.g. the "English" / "العربية" switch) use their own script's font */
 [lang="ar"] { font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', system-ui, sans-serif; }
 [lang="en"] { font-family: 'IBM Plex Sans', system-ui, sans-serif; }
+/* Before launch / after launch. The APP_STORE_URL line in each page adds class "live" to <html>. */
+html:not(.live) .when-live { display: none; }
+html.live .when-soon { display: none; }

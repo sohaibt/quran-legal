@@ -1,7 +1,10 @@
 # Backlog — qurantutors.app website
 
+## Now
+- Merge PR #1 (`landing-page`) when the owner says so: site goes live in "coming soon" mode.
+
 ## Waiting on App Review
-- Paste the App Store URL into `APP_STORE_URL` in `index.html` and `en/index.html`, then merge the `landing-page` PR (owner approves the merge).
+- After approval and release: paste the App Store URL into `APP_STORE_URL` in `index.html` and `en/index.html` (switches both pages to live mode).
 
 ## Later
 - Google Play badge + link when the Android app ships (now "Coming soon", plain text).
