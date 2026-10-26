@@ -1,34 +1,205 @@
 <!doctype html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quran Tutors · معلّمو القرآن</title>
+<title>معلّمو القرآن · معلّمون موثّقون لعائلتك</title>
+<meta name="description" content="ابحث عن معلّم أو معلّمة قرآن تمّت مراجعتهم، واحجز درسًا في دقيقة. كل معلّم يقدّم ساعات مجانية كل أسبوع. تطبيق معلّمو القرآن على iPhone.">
+<link rel="canonical" href="https://qurantutors.app/">
+<link rel="alternate" hreflang="ar" href="https://qurantutors.app/">
+<link rel="alternate" hreflang="en" href="https://qurantutors.app/en/">
+<link rel="alternate" hreflang="x-default" href="https://qurantutors.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qurantutors.app/">
+<meta property="og:title" content="معلّمو القرآن · معلّمون موثّقون لعائلتك">
+<meta property="og:description" content="ابحث عن معلّم قرآن تمّت مراجعته، واحجز درسًا في دقيقة. ساعات مجانية كل أسبوع.">
+<meta property="og:image" content="https://qurantutors.app/assets/icon-512.png">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Naskh+Arabic:wght@600;700&display=swap">
+<link rel="stylesheet" href="landing.css">
+<!-- APP_STORE_URL is set in the script below. -->
+<script>
+  // APP_STORE_URL: after Apple approves the app, paste its App Store link between the quotes.
+  // That one line switches the page from "coming soon" to "live": App Store badges and
+  // "Apply in the app" appear (class when-live), the "coming soon" bits hide (class when-soon).
+  const APP_STORE_URL = '';
+  if (APP_STORE_URL) {
+    document.documentElement.classList.add('live');
+    addEventListener('DOMContentLoaded', () => document.querySelectorAll('[data-app-store]').forEach(a => a.href = APP_STORE_URL));
+  }
+</script>
 </head>
 <body>
-<header class="bar">
-  <strong><span lang="ar">معلّمو القرآن</span> · Quran Tutors</strong>
+<!-- The logo, drawn once and reused with <use href="#logo"> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo" viewBox="0 0 100 100"><g transform="translate(0 -7)"><path fill="currentColor" d="M14 34 C28 26 42 27 50 36 C58 27 72 26 86 34 L86 42 C72 34 58 35 50 44 C42 35 28 34 14 42 Z"/><path d="M25 45 L67 84 M75 45 L33 84" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></g></symbol></svg>
+
+<header class="hero">
+  <nav class="in nav" aria-label="القائمة الرئيسية">
+    <a class="brand" href="/"><svg width="34" height="34" aria-hidden="true"><use href="#logo"/></svg><span class="disp">معلّمو القرآن</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="#why">لماذا معلّمو القرآن</a>
+      <a class="nav-link" href="#how">كيف يعمل</a>
+      <a class="nav-link" href="#teachers">للمعلّمين</a>
+      <a class="nav-link lang" href="en/" lang="en" hreflang="en"><svg class="ic s16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.7 2.5 14.3 0 17M12 3.5c-2.5 2.7-2.5 14.3 0 17"/></svg>English</a>
+    </div>
+  </nav>
+
+  <div class="in hero-grid">
+    <div class="hero-copy">
+      <span class="chip"><span class="when-soon">قريبًا على iPhone</span><span class="when-live">متاح الآن على iPhone</span></span>
+      <h1 class="disp">معلّمون موثّقون لعائلتك</h1>
+      <p class="lead">ابحث عن معلّم أو معلّمة قرآن تمّت مراجعتهم، واحجز درسًا في دقيقة. كل معلّم يقدّم ساعات مجانية كل أسبوع.</p>
+      <div class="stores">
+        <a class="badge when-live" data-app-store><img src="assets/app-store-badge-ar.svg" alt="حمّله من App Store" width="180" height="60"></a>
+        <span class="soon when-soon">App Store · قريبًا</span>
+        <span class="soon">Google Play · قريبًا</span>
+      </div>
+    </div>
+    <div class="hero-phone">
+      <div class="phone"><img src="assets/ar-2-teacher-page.webp" width="640" height="1391" alt="صفحة المعلّمة عائشة محمود في التطبيق: تقييم 4.9، زر للاستماع إلى تلاوتها، ما تدرّسه (تجويد، حفظ، للأطفال)، والمواعيد المتاحة مع درس مجاني."></div>
+    </div>
+  </div>
 </header>
+
 <main>
-  <section lang="ar" dir="rtl">
-    <h2>معلومات التطبيق</h2>
-    <ul>
-      <li><a href="privacy.html#ar">سياسة الخصوصية</a></li>
-      <li><a href="terms.html#ar">شروط الاستخدام</a></li>
-      <li>التواصل: <a href="mailto:support@qurantutors.app">support@qurantutors.app</a></li>
-    </ul>
+  <section id="why" class="sec">
+    <div class="in">
+      <div class="sec-head">
+        <h2 class="disp">لماذا معلّمو القرآن؟</h2>
+        <p class="muted">بديل هادئ ومنظّم عن البحث في مجموعات واتساب.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="icon-box"><svg class="ic s28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l7 2.8v5.2c0 4.3-3 7.7-7 9-4-1.3-7-4.7-7-9V6.3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>معلّمون موثّقون</h3>
+          <p class="muted">يراجع فريقنا تلاوة كل معلّم وإجازته قبل أن تراه العائلات.</p>
+        </article>
+        <article class="card">
+          <span class="icon-box teal"><svg class="ic s28" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M4 13h16M12 9v11M12 9c-1.5-3.5-5.5-4-5.5-1.5S10 9 12 9zm0 0c1.5-3.5 5.5-4 5.5-1.5S14 9 12 9z"/></svg></span>
+          <h3>دروس مجانية كل أسبوع</h3>
+          <p class="muted">كل معلّم يقدّم ساعات مجانية. وللدروس المدفوعة سعر صغير ثابت يُدفع للمعلّم مباشرة.</p>
+        </article>
+        <article class="card">
+          <span class="icon-box plum"><svg class="ic s28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 19.5a6 6 0 0 1 12 0"/><circle cx="17" cy="9.5" r="2.5"/><path d="M16 14.5a4.5 4.5 0 0 1 5 5"/></svg></span>
+          <h3>المعلّم المناسب</h3>
+          <p class="muted">يتعلّم كل فرد مع معلّم من نفس الجنس، ويمكن للأولاد الصغار التعلّم مع معلّمة أيضًا.</p>
+        </article>
+        <article class="card">
+          <span class="icon-box sand"><svg class="ic s28" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/><path d="M9.5 12.5v-1a2.5 2.5 0 0 1 5 0v1"/><rect x="8.5" y="12.5" width="7" height="4" rx="1"/></svg></span>
+          <h3>محادثة آمنة</h3>
+          <p class="muted">المحادثة تبقى داخل التطبيق، وأرقام الهواتف ومعلومات التواصل مخفية. يمكنك الإبلاغ عن أي حساب أو حظره.</p>
+        </article>
+      </div>
+    </div>
   </section>
-  <section lang="en" dir="ltr">
-    <h2>About the app</h2>
-    <ul>
-      <li><a href="privacy.html#en">Privacy policy</a></li>
-      <li><a href="terms.html#en">Terms of use</a></li>
-      <li>Contact: <a href="mailto:support@qurantutors.app">support@qurantutors.app</a></li>
-    </ul>
+
+  <section id="how" class="sec sec-white">
+    <div class="in"><div class="sec-head">
+      <h2 class="disp">كيف يعمل؟</h2>
+      <p class="muted">أربع خطوات من التسجيل إلى أول درس.</p>
+    </div></div>
+    <div class="in steps-wrap">
+      <ol class="steps">
+        <li class="step">
+          <div class="tile">
+            <div class="card learners" aria-hidden="true">
+              <span class="icon-box"><svg class="ic s28" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 19.5a6 6 0 0 1 12 0"/><path d="M18 8v6M15 11h6"/></svg></span>
+              <span class="learner"><b>أ</b>أنا</span>
+              <span class="learner"><b>ز</b>زينب · 12 سنة</span>
+              <span class="learner"><b>ي</b>يوسف · 9 سنوات</span>
+            </div>
+          </div>
+          <div class="step-text"><span class="num">1</span><p>أضف نفسك أو أطفالك كمتعلّمين.</p></div>
+        </li>
+        <li class="step">
+          <div class="tile"><div class="phone sm"><img src="assets/ar-1-teachers.webp" width="640" height="1391" loading="lazy" alt="قائمة المعلّمات في التطبيق مع التقييم، وما تدرّسه كل معلّمة، وأقرب موعد، وعلامة «متاح مجانًا»."></div></div>
+          <div class="step-text"><span class="num">2</span><p>ابحث حسب التجويد أو الحفظ أو القاعدة النورانية أو دروس الأطفال، واستمع لتلاوة كل معلّم.</p></div>
+        </li>
+        <li class="step">
+          <div class="tile"><div class="phone sm"><img src="assets/ar-3-booking.webp" width="640" height="1391" loading="lazy" alt="شاشة تأكيد الحجز: المتعلّمة زينب، المعلّمة عائشة محمود، الغد الساعة 4:00 م لمدة 60 دقيقة، مجانًا، مع خيار التكرار كل أسبوع."></div></div>
+          <div class="step-text"><span class="num">3</span><p>احجز درسًا واحدًا أو موعدًا أسبوعيًا في دقيقة.</p></div>
+        </li>
+        <li class="step">
+          <div class="tile"><div class="phone sm"><img src="assets/ar-5-my-lessons.webp" width="640" height="1391" loading="lazy" alt="شاشة «دروسي» تعرض الدروس القادمة لكل طفل، مع زر للمحادثة وزر للإلغاء."></div></div>
+          <div class="step-text"><span class="num">4</span><p>انضم عبر رابط Zoom أو Meet أو Teams الخاص بالمعلّم، مع تذكير قبل كل درس.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="families" class="sec">
+    <div class="in fam-grid">
+      <div class="sec-head">
+        <h2 class="disp">للعائلات</h2>
+        <p class="muted">كل ما تحتاجه العائلة لمتابعة دروس القرآن في مكان واحد.</p>
+      </div>
+      <ul class="feats">
+        <li class="card"><span class="icon-box"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 19.5a6 6 0 0 1 12 0"/><path d="M18 8v6M15 11h6"/></svg></span><span>حساب واحد لكل العائلة، وملف لكل طفل.</span></li>
+        <li class="card"><span class="icon-box"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/></svg></span><span>رسائل نصية وصوتية مع المعلّم.</span></li>
+        <li class="card"><span class="icon-box"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span>ملخّص كل سبت لدروس الأسبوع القادم.</span></li>
+        <li class="card"><span class="icon-box"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.6l-5.3 2.9 1.1-5.9L3.4 9.5l6-.8z"/></svg></span><span>قيّم كل درس بعد انتهائه.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teachers" class="sec hero teach">
+    <div class="in teach-grid">
+      <div class="teach-copy">
+        <span class="eyebrow">للمعلّمين والمعلّمات</span>
+        <h2 class="disp">علّم القرآن لعائلات تبحث عنك</h2>
+        <ul class="ticks">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>قدّم بتسجيل لتلاوتك، وإجازتك إن وُجدت.</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>حدّد جدولك الأسبوعي.</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>تحجز العائلات أوقاتك المتاحة مباشرة.</li>
+        </ul>
+        <a class="btn when-live" data-app-store>قدّم من التطبيق</a>
+      </div>
+      <div class="card schedule" role="img" aria-label="مثال على جدول أسبوعي لمعلّم، فيه مواعيد مجانية ومواعيد مدفوعة.">
+        <div class="schedule-head"><span>جدولي الأسبوعي</span><span class="legend"><i class="free"></i><span>مجاني</span><i class="paid"></i><span>مدفوع</span></span></div>
+        <div class="dayrow"><span class="dayname">السبت</span><div class="slots"><span class="slot free">4:00م · 60د</span><span class="slot paid">6:00م · 60د</span></div></div>
+        <div class="dayrow"><span class="dayname">الأحد</span><div class="slots"><span class="slot free">4:00م · 60د</span><span class="slot free">5:00م · 30د</span></div></div>
+        <div class="dayrow"><span class="dayname">الإثنين</span><div class="slots"><span class="slot free">9:30ص · 30د</span><span class="slot paid">5:00م · 60د</span></div></div>
+        <div class="dayrow extra"><span class="dayname">الثلاثاء</span><div class="slots"><span class="slot free">4:00م · 60د</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="sec">
+    <div class="in cta">
+      <div class="hero app-tile"><svg width="50" height="50" aria-hidden="true"><use href="#logo"/></svg></div>
+      <h2 class="disp">ابحث عن معلّم لعائلتك اليوم</h2>
+      <p class="muted when-soon">قريبًا على iPhone، وأول درس يمكن أن يكون مجانيًا.</p>
+      <p class="muted when-live">حمّل التطبيق واحجز أول درس مجاني.</p>
+      <div class="stores">
+        <a class="badge when-live" data-app-store><img src="assets/app-store-badge-ar.svg" alt="حمّله من App Store" width="180" height="60"></a>
+        <span class="soon when-soon">App Store · قريبًا</span>
+        <span class="soon">Google Play · قريبًا</span>
+      </div>
+    </div>
   </section>
 </main>
+
+<footer class="foot">
+  <div class="in foot-in">
+    <div class="foot-top">
+      <a class="brand" href="/"><svg width="30" height="30" aria-hidden="true"><use href="#logo"/></svg><span class="disp">معلّمو القرآن</span></a>
+      <a class="nav-link lang-foot" href="en/" lang="en" hreflang="en">English</a>
+    </div>
+    <nav aria-label="روابط أسفل الصفحة">
+      <a class="nav-link" href="privacy.html#ar">الخصوصية</a>
+      <a class="nav-link" href="terms.html#ar">الشروط</a>
+      <a class="nav-link" href="mailto:support@qurantutors.app" lang="en">support@qurantutors.app</a>
+      <a class="nav-link lang-foot" href="en/" lang="en" hreflang="en"><svg class="ic s16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.7 2.5 14.3 0 17M12 3.5c-2.5 2.7-2.5 14.3 0 17"/></svg>English</a>
+    </nav>
+    <span class="copy" lang="en" dir="ltr">© 2026 Sohaib Thiab</span>
+  </div>
+</footer>
+
 </body>
 </html>
