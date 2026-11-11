@@ -28,7 +28,7 @@
   // APP_STORE_URL: after Apple approves the app, paste its App Store link between the quotes.
   // That one line switches the page from "coming soon" to "live": App Store badges and
   // "Apply in the app" appear (class when-live), the "coming soon" bits hide (class when-soon).
-  const APP_STORE_URL = '';
+  const APP_STORE_URL = 'https://apps.apple.com/app/id6824174298';
   if (APP_STORE_URL) {
     document.documentElement.classList.add('live');
     addEventListener('DOMContentLoaded', () => document.querySelectorAll('[data-app-store]').forEach(a => a.href = APP_STORE_URL));
