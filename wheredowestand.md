@@ -3,6 +3,9 @@
 Public GitHub Pages repo for https://qurantutors.app (custom domain via `CNAME`). The app itself lives in the `quran` repo.
 
 ## RESUME HERE
+**2026-11-24 (Mac Mini):** Site is live in "live" mode (App Store link set). Added the "Daily wird" section (ar + en: teacher-set wird, tajweed reader, athkar, reminders) with 4 new screenshots `assets/{ar,en}-6-wird.webp` and `-7-reader.webp` (iPhone 18 Pro Max simulator, dev build with the Tools button off, local seed; Arabic shots used Arabic sample names, restored after). Teachers band: ijazah now required, plus "set a daily wird". Meta description mentions the wird. Checked at 1440 px (headless Chrome) and on the simulator's Safari (ar + en). Google Play stays "Coming soon" until the Play release.
+
+Older:
 **2026-10-26 (MacBook Air):** Landing page **live** at https://qurantutors.app/ (Arabic) and /en/ (English), in "coming soon" mode: PR #1 merged on the owner's OK (merge commit f2ec58e), GitHub Pages build checked, all pages and privacy/terms return 200. Owner chose to go live before App Review approval.
 - `index.html` = Arabic (primary, RTL), `en/index.html` = English. One responsive page each (phone + desktop from one HTML; breakpoint 1000px). Styles in `landing.css`; `style.css` stays for `privacy.html` / `terms.html` (both untouched; App Store links to `/privacy.html`).
 - Real app screenshots in `assets/` (WebP, 640px wide, 24–48 KB each), from `quran/docs/store-screenshots/{ar,en}`. Step 1 (add learners) uses a small HTML "learners" card, not a screenshot (no matching screen; `4-chat` is copied but unused).
@@ -21,3 +24,4 @@ Ask me before anything outward-facing (merge, push to main, DNS).
 - 2026-10-18 — Privacy policy and terms (ar + en) published; domain qurantutors.app via CNAME.
 - 2026-10-26 — Landing page (ar + en) built on `landing-page`, PR opened, not merged. Checked locally at 390px and 1440px; privacy/terms unchanged.
 - 2026-10-26 — Owner chose to go live before App Review: added "coming soon" mode (one-line switch to live). PR #1 merged; site live.
+- 2026-11-24 — Daily wird section + teacher ijazah/wird lines (ar + en), pushed to main (live).

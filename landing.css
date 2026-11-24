@@ -94,6 +94,14 @@ html[lang="en"] .disp { font-weight: 600; letter-spacing: -.015em; }
 .feats .card { flex-direction: row; align-items: center; gap: 14px; padding: 16px; }
 .feats .icon-box { width: 44px; height: 44px; }
 
+/* Daily wird: copy beside two phones on a pattern tile */
+.wird-grid { display: flex; flex-direction: column; gap: 28px; }
+.wird-copy { display: flex; flex-direction: column; gap: 4px; }
+.wird .ticks .ic { color: var(--teal-700); }
+.wird-phones { height: 360px; border-radius: 22px; background: var(--lapis-50) url(assets/pattern.svg); background-size: 32px 32px; overflow: hidden; display: flex; justify-content: center; gap: 12px; padding-top: 28px; }
+.wird-phones .phone.sm img { width: 145px; border-radius: 22px; }
+.wird-phones .phone.sm { border-radius: 28px; padding: 6px; }
+
 /* For teachers */
 .teach { background-color: var(--teal-700); }
 .teach-grid { display: flex; flex-direction: column; gap: 18px; }
@@ -178,6 +186,11 @@ html[lang="en"] .disp { font-weight: 600; letter-spacing: -.015em; }
   .feats .card { padding: 22px; gap: 16px; border-radius: 22px; }
   .feats .icon-box { width: 48px; height: 48px; }
 
+  .wird-grid { display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 80px; align-items: center; }
+  .wird-copy { gap: 0; }
+  .wird-phones { height: 520px; border-radius: 24px; background-size: 36px 36px; padding-top: 40px; gap: 20px; }
+  .wird-phones .phone.sm img { width: 200px; border-radius: 29px; }
+  .wird-phones .phone.sm { border-radius: 36px; padding: 7px; }
   .teach { padding: 112px 0; background-size: 56px 56px; }
   .teach-grid { display: grid; grid-template-columns: minmax(0, 1fr) 460px; gap: 80px; align-items: center; }
   .teach-copy { gap: 20px; }
